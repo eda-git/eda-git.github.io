@@ -1,0 +1,263 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:600|Raleway|Montserrat|Roboto&display=swap");
+div#viewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#viewer div {
+  width: 50%;
+  text-align: center;
+}
+
+#appName h2 {
+  text-align: center;
+}
+
+div#header {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  list-style-type: none;
+}
+
+div#menu ul li {
+  padding: 1% 10px;
+}
+
+div#menu {
+  position: absolute;
+  right: 0;
+  top: 1%;
+  width: 25%;
+}
+
+div#menu ul li {
+  padding-left: 1%;
+}
+
+div#app {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+html, body {
+  height: 100vh;
+}
+
+div#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 637%;
+  color: #00bcd4;
+  letter-spacing: -0.1em;
+}
+
+div#row.full-height {
+  border-style: solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-color: #00bcd4;
+  height: 40%;
+}
+
+.descriptor {
+  font-size: 126%;
+}
+
+.contents {
+  display: inline;
+}
+
+div#area {
+  font-weight: bold;
+}
+
+div#status, div#status a {
+  color: #f977ef;
+}
+
+body {
+  color: #FFF;
+}
+
+div#header {
+  padding-bottom: 10%;
+  height: 60%;
+}
+
+.descriptor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contents {
+  width: 30%;
+}
+
+div#places {
+  width: 60%;
+  text-align: right;
+}
+
+a {
+  color: #00ceff;
+}
+
+div#links a {
+  color: #FFF;
+  font-size: 125%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-right: 1%;
+}
+
+div#top {
+  background: #0f121b;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top.content {
+  height: 100%;
+}
+
+div#top {
+  height: 100%;
+}
+
+div#rest {
+  background: #313131;
+}
+
+div#appName {
+  width: 30%;
+  margin-right: 3%;
+}
+
+div#featured div#desc {
+  width: 60%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+div#tech {
+  width: 40%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.headline span {
+  font-weight: bold;
+}
+
+div#rest {
+  overflow-y: hidden;
+}
+
+div#knowledge, div#information {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 50%;
+}
+
+div#information div {
+  display: block;
+}
+
+/* Footer */
+div#section.contact p {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+
+footer {
+  background: #000;
+}
+
+div#flexer {
+  color: #FFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+div#vertLine {
+  height: 4em;
+  width: 0.3em;
+  background: #FFF;
+  margin-left: 2%;
+}
+
+#flexer div#content {
+  margin-left: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6em;
+}
+
+#flexer a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contents {
+    width: 50%;
+  }
+  div#appName {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  div#row {
+    display: block;
+  }
+  div#menu {
+    display: none;
+  }
+  div#links a {
+    display: block;
+  }
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "eda-git",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://eda-git.github.io/",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "react": "^16.12.0",
+    "react-awesome-slider": "^2.2.1",
+    "react-dom": "^16.12.0",
+    "react-responsive-carousel": "^3.1.51",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
