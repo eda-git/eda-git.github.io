@@ -1,5 +1,3 @@
-import React from 'react';
-import { useState } from 'react';
 import ExperienceCard from '@/components/ui/ExperienceCard';
 
 export default function Experience() {

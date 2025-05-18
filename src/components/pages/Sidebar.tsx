@@ -1,7 +1,12 @@
 import '@/assets/linkedin.svg';
 import '@/assets/github-mark.svg';
 
-export default function Sidebar({setPage, pages}) {
+interface SidebarProps {
+    setPage: (page: string) => void;
+    pages: string[];
+}
+
+export default function Sidebar({setPage, pages}: SidebarProps) {
     return (
         <div className="sidebar">
             <div className="user-name-holder">

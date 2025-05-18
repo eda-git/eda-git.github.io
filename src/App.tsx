@@ -4,6 +4,7 @@ import '@/styles/index.css';
 import '@/styles/skills.css';
 import '@/styles/projects.css';
 import '@/styles/background.css';
+import '@/styles/media.css';
 import Experience from '@/components/pages/Experience';
 import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';

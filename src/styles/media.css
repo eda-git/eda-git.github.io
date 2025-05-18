@@ -1,0 +1,349 @@
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  
+  body {
+    animation: none;
+  }
+  
+  .app {
+    flex-direction: column;
+  }
+  
+  /* Content & Sidebar */
+  .content {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  
+  /* User Name */
+  .user-name-holder {
+    font-size: 3em;
+    height: 1.5em;
+  }
+  
+  /* Experience Section */
+  .experience-header {
+    width: 80%;
+    height: 3em;
+  }
+  
+  .experience-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .experience-card-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .experience-card-logo {
+    width: 80%;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-card-desc {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .experience-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .experience-card-description {
+    font-size: 1.1rem;
+  }
+  
+  .experience-card-years {
+    font-size: 1.2rem;
+  }
+  
+  .experience-title-holder {
+    justify-content: center;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar-menu-control {
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  .sidebar-menu-item {
+    font-size: 1.2rem;
+    height: 2.5em;
+  }
+  
+  .sidebar-menu-buttons {
+    margin-top: 1rem;
+  }
+  
+  .sidebar-menu-button-object {
+    width: 80px;
+    height: 45px;
+  }
+  
+  .email-button {
+    width: 90%;
+    height: 3em;
+  }
+  
+  .email-button-object {
+    font-size: 1.2rem;
+  }
+  
+  /* Background Section */
+  .background-content {
+    width: 95%;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  
+  .university-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .university-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .university-label {
+    font-size: 1.1rem;
+  }
+  
+  .university-time {
+    font-size: 0.9rem;
+  }
+  
+  .awards-card, 
+  .interests-card {
+    padding: 1rem;
+  }
+  
+  .interests-lists {
+    gap: 0.5rem;
+  }
+  
+  /* Projects Section */
+  .projects-content {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .project-card {
+    height: 18em;
+  }
+  
+  .project-card-title {
+    font-size: 1.2rem;
+  }
+  
+  /* Skills Section */
+  .skills-content {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .skills-card {
+    height: 18em;
+  }
+  
+  .skills-card-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Styles (576px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Global Layout */
+  html {
+    font-size: 15px;
+  }
+  
+  .app {
+    flex-direction: column;
+  }
+  
+  /* Content & Sidebar */
+  .content {
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    margin: 1rem auto;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  
+  /* User Name */
+  .user-name-holder {
+    font-size: 5em;
+    height: 1.8em;
+  }
+  
+  /* Experience Section */
+  .experience-header {
+    width: 50%;
+    height: 4em;
+  }
+  
+  .experience-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .experience-card-flex {
+    gap: 2rem;
+  }
+  
+  .experience-card-logo {
+    width: 35%;
+  }
+  
+  .experience-card-desc {
+    width: 60%;
+  }
+  
+  .experience-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .experience-card-description {
+    font-size: 1.3rem;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar-menu-control {
+    width: 80%;
+  }
+  
+  .sidebar-menu-item {
+    font-size: 1.5rem;
+  }
+  
+  .email-button-object {
+    font-size: 1.5rem;
+  }
+  
+  /* Background Section */
+  .background-content {
+    width: 95%;
+  }
+  
+  .university-card {
+    align-items: center;
+    padding: 1.5rem;
+  }
+  
+  .university-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Projects Section */
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  
+  /* Skills Section */
+  .skills-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* Small Screen Styles (769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Global Layout */
+  html {
+    font-size: 15px;
+  }
+  
+  /* Content & Sidebar */
+  .content {
+    width: 75%;
+  }
+  
+  .sidebar {
+    width: 25%;
+  }
+  
+  /* User Name */
+  .user-name-holder {
+    font-size: 7em;
+  }
+  
+  /* Experience Section */
+  .experience-card-title {
+    font-size: 1.7rem;
+  }
+  
+  .experience-card-description {
+    font-size: 1.5rem;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar-menu-item {
+    font-size: 1.7rem;
+  }
+  
+  /* Projects Section */
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Skills Section */
+  .skills-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Special case for landscape mode on mobile */
+@media (max-height: 576px) and (orientation: landscape) {
+  .app {
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 30%;
+    height: 100vh;
+  }
+  
+  .content {
+    width: 70%;
+    height: 90vh;
+  }
+  
+  .user-name-holder {
+    font-size: 3em;
+    height: 1.5em;
+  }
+  
+  .sidebar-menu-item {
+    font-size: 1.2rem;
+  }
+}
