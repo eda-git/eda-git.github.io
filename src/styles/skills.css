@@ -1,0 +1,112 @@
+/* Modern Grid Layout */
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 90%;
+    height: 83%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Enhanced Skills Section */
+.skills {
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-dark);
+}
+
+/* Custom Scrollbar */
+.skills::-webkit-scrollbar {
+    width: 8px;
+}
+
+.skills::-webkit-scrollbar-track {
+    background: var(--color-dark);
+    border-radius: 10px;
+}
+
+.skills::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-dark);
+}
+
+.skills::-webkit-scrollbar-thumb:hover {
+    background: #d8ff5f;
+}
+
+/* Modern Card Styling */
+.skills-card {
+    border-radius: 24px;
+    background: var(--color-dark);
+    height: 20em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card-logo {
+    height: 75%;
+    border-radius: 16px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover .skills-card-logo {
+    transform: scale(1.05);
+}
+
+.skills-card-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-card-title {
+    border-radius: 16px;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-style: italic;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.skills-card:hover .skills-card-title {
+    background: #d8ff5f;
+}
+
+.skills-card-desc {
+    height: 25%;
+    padding: 1rem;
+    color: var(--color-primary);
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .skills {
+    animation: fade-in 1s ease-in-out;
+  }
+  

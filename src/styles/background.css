@@ -1,0 +1,152 @@
+.background-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    height: 83%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.background {
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-dark);
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Scrollbar Styles */
+.background::-webkit-scrollbar {
+    width: 8px;
+}
+
+.background::-webkit-scrollbar-track {
+    background: var(--color-dark);
+    border-radius: 10px;
+}
+
+.background::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-dark);
+}
+
+.background::-webkit-scrollbar-thumb:hover {
+    background: #d8ff5f;
+}
+
+/* University Card Styles */
+.university-card {
+    border-radius: 24px;
+    background: var(--color-dark);
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.university-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: url(/washington.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.university-label {
+    color: var(--color-primary);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.university-time {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-style: italic;
+}
+
+/* Awards Card Styles */
+.awards-card {
+    border-radius: 24px;
+    background: var(--color-dark);
+    padding: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: var(--color-primary);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.awards-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Interests Card Styles */
+.interests-card {
+    border-radius: 24px;
+    background: var(--color-dark);
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.interests-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.interests-list-item {
+    color: var(--color-primary);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.interests-list-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* Animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .university-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .university-icon {
+        width: 100px;
+        height: 100px;
+    }
+}

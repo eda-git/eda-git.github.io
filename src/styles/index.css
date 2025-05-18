@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --color-primary: #C7EF4E;
+  --color-dark: #003310;
+  --color-background: #212121;
+  --color-surface: #514B42;
+  --color-border: #6f8628;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  
+  --transition-standard: 0.3s ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+    background-size: 200% 200%;
+  }
+
+  25% {
+    background-position: 50% 25%;
+    background-size: 300% 300%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-size: 400% 400%;
+  }
+
+  75% {
+    background-position: 50% 75%;
+    background-size: 300% 300%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-size: 200% 200%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  background: radial-gradient(circle at center, #434536, var(--color-background) 60%);
+  background-size: 200% 200%;
+  animation: wave 30s ease-in-out infinite;
+  color: var(--color-primary);
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+.app {
+  display: flex;
+  align-items: center;
+}
+
+
+.user-name-holder {
+    color: #C7EF4E;
+    text-align: center;
+    font-family: Neuton;
+    font-size: 10em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 100%;
+    height: 2em;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.email-button-object {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 39px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content {
+  width: 70%;
+  height: 90vh;
+  padding: 1%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #514B42;
+  border-style: solid;
+  border-color: #6f8628;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  flex-shrink: 0;
+  background: #003310;
+}
+
+.sidebar-menu-button-object.github-icon {
+  background-image: url('@/assets/github-mark.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.sidebar-menu-button-object.linkedin-icon {
+  background-image: url('@/assets/linkedin.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+.content {
+  border-style: solid;
+  border-color: #6f8628;
+}
+
+.sidebar-menu-button-object {
+  width: 150px;
+  height: 74px;
+  flex-shrink: 0;
+  border-radius: 65px;
+  background-color: rgba(255, 255, 255, 0.49);
+}
+
+.sidebar-menu-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.experience-card {
+  border-radius: 80px;
+  background: #003310;
+  margin-bottom: 5vh;
+}
+
+.experience-card-title {
+  color: #C7EF4E;
+  font-family: Neuton;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.experience-card-description {
+  color: #C7EF4E;
+  font-family: "Open Sans";
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.experience-card {
+  transition: transform var(--transition-standard);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+}
+
+.experience-card-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.experience-card-description {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.experience-card-years {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.experience-card-desc {
+  width: 52%;
+  /* line-height: 4em; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1%;
+}
+
+.experience-card-flex {
+  display: flex;
+  padding: 2%;
+}
+
+.experience-card-logo {
+  width: 30%;
+  border-radius: 80px;
+  background: #FFF;
+}
+.experience-card-logo.skillup {
+  background: url('/skillup.svg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-color: #FFF;
+}
+
+.experience-card-logo.cascade {
+  background: url(/cascade.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-color: #172c3b;
+}
+
+.experience-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.experience-header {
+  display: flex;
+  width: 30%;
+  height: 5em;
+  border-radius: 64px;
+  background: #003310;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-header h1 {
+  color: #C7EF4E;
+  text-align: center;
+  font-family: Neuton;
+  font-size: 39px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.experience-title-holder {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1% 0% 5% 0;
+}
+
+.sidebar-menu-control {
+  width: 80%;
+  flex-shrink: 0;
+  padding: 5%;
+  border-radius: 65px;
+  background: rgba(0, 0, 0, 0.38);
+  margin: 0 auto;
+}
+
+.sidebar-menu-item {
+  width: 100%;
+  height: 2em;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 65px;
+    background: var(--color-primary);
+  color: #003310;
+  display: flex;
+  text-align: center;
+  font-family: "Open Sans";
+  margin-top: 3%;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+    background: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+    transition: letter-spacing 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.sidebar-menu-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, #C7EF4E, #d8ff5f, #C7EF4E);
+    transition: transform 0.3s ease-out;
+    z-index: -1;
+}
+
+.sidebar-menu-item:hover {
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(199, 239, 78, 0.2);
+}
+
+.sidebar-menu-item:hover:before {
+    transform: translateX(50%);
+}
+.sidebar-menu {
+  margin-top: 5%;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.email-button {
+  width: 90%;
+  height: 5em;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #00200A;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sidebar-menu-button-object {
+    cursor: pointer;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.experience {
+  animation: fade-in 1s ease-in-out;
+}
