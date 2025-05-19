@@ -1,5 +1,6 @@
 import '@/assets/linkedin.svg';
 import '@/assets/github-mark.svg';
+import React from 'react';
 
 interface SidebarProps {
     setPage: (page: string) => void;
@@ -44,12 +45,14 @@ export default function Sidebar({setPage, pages}: SidebarProps) {
                 <div className="sidebar-menu-buttons">
                     <div className="sidebar-menu-button">
                         <div className="sidebar-menu-button-object github-icon" aria-label="Github"
-                        
+                        onClick={() => window.open("https://github.com/eda-git", "_blank")}
                         >
                         </div>
                     </div>
                     <div className="sidebar-menu-button">
-                        <div className="sidebar-menu-button-object linkedin-icon" aria-label="LinkedIn">
+                        <div className="sidebar-menu-button-object linkedin-icon" aria-label="LinkedIn"
+                        onClick={() => window.open("https://www.linkedin.com/in/ed-ali-812a0a14b/", "_blank")}
+                        >
                         </div>
                     </div>
                 </div>
