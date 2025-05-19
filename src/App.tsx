@@ -5,10 +5,14 @@ import '@/styles/skills.css';
 import '@/styles/projects.css';
 import '@/styles/background.css';
 import '@/styles/media.css';
+import '@/styles/gdpr.css';
 import Experience from '@/components/pages/Experience';
-import Skills from './components/pages/Skills';
-import Projects from './components/pages/Projects';
-import Background from './components/pages/Background';
+import Skills from '@/components/pages/Skills';
+import Projects from '@/components/pages/Projects';
+import Background from '@/components/pages/Background';
+import GDPRNotice from '@/components/ui/GDPRNotice';
+import React from 'react';
+
 function App() {
   const [page, setPage] = useState('experience');
   const pages = [ "experience", "background", "skills", "projects"];
@@ -23,7 +27,7 @@ function App() {
           {page === 'background' && <Background />}
         </div>
       </div>
-
+      <GDPRNotice />
     </>
   )
 }
