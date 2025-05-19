@@ -11,7 +11,6 @@ import Skills from '@/components/pages/Skills';
 import Projects from '@/components/pages/Projects';
 import Background from '@/components/pages/Background';
 import GDPRNotice from '@/components/ui/GDPRNotice';
-import React from 'react';
 
 function App() {
   const [page, setPage] = useState('experience');

@@ -1,5 +1,4 @@
 import SkillsCard from '@/components/ui/SkillsCard';
-import React from 'react';
 
 export default function Skills() {
     const skills = [

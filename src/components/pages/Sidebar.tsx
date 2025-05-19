@@ -1,6 +1,5 @@
 import '@/assets/linkedin.svg';
 import '@/assets/github-mark.svg';
-import React from 'react';
 
 interface SidebarProps {
     setPage: (page: string) => void;

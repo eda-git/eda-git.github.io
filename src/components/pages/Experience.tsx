@@ -1,5 +1,4 @@
 import ExperienceCard from '@/components/ui/ExperienceCard';
-import React from 'react';
 
 export default function Experience() {
     const experiences = [
