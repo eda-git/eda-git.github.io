@@ -16,11 +16,11 @@ export default function Projects() {
                 "pubimage": "/core/generator.png"
             },
             "scorecard": {
-                "title": "Scorecard",
+                "title": "FightTrax",
                 "release": "2024-12-09",
                 "description": "This application is designed to serve as a comprehensive digital tool for scoring combat sports using the universally recognized 10-Point Must System. It caters to sports like boxing, MMA, and other combat sports where the system is applied. Available on web and coming soon to mobile",
                 "links": [{
-                    "link": "https://scorecard.coresoftworks.net",
+                    "link": "https://fighttrax.com",
                     "platform": "Web"
                 }],
                 "pubimage": "./scorecard.png",
