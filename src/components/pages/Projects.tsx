@@ -4,6 +4,17 @@ import ProjectCard from '@/components/ui/ProjectCard';
 
 export default function Projects() {
     const projects =  {
+        "fighttrax": {
+                "title": "FightTrax",
+                "release": "2024-12-09",
+                "description": "This application is designed to serve as a comprehensive digital tool for scoring combat sports using the universally recognized 10-Point Must System. It caters to sports like boxing, MMA, and other combat sports where the system is applied. Available on web and coming soon to mobile",
+                "links": [{
+                    "link": "https://fighttrax.com",
+                    "platform": "Web"
+                }],
+                "pubimage": "./scorecard.png",
+                "image": "/core/scorecard.svg"
+            },
             "generator": {
                 "title": "Password Generator",
                 "release": "2024-12-12",
@@ -15,17 +26,7 @@ export default function Projects() {
                 "image": "/core/generator.svg",
                 "pubimage": "/core/generator.png"
             },
-            "fighttrax": {
-                "title": "FightTrax",
-                "release": "2024-12-09",
-                "description": "This application is designed to serve as a comprehensive digital tool for scoring combat sports using the universally recognized 10-Point Must System. It caters to sports like boxing, MMA, and other combat sports where the system is applied. Available on web and coming soon to mobile",
-                "links": [{
-                    "link": "https://fighttrax.com",
-                    "platform": "Web"
-                }],
-                "pubimage": "./scorecard.png",
-                "image": "/core/scorecard.svg"
-            },
+
             "wikirun": {
                 "title": "Wikirun",
                 "release": "2025-04-18",
