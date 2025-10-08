@@ -48,7 +48,22 @@ export default function Projects() {
             }],
             "pubimage": "./coretools.png",
             "image": "/core/coretools.svg"
+        },
+        "vieworb": {
+            "title": "vieworb",
+            "release": "2025-10-07",
+            "description": "A minimal terminal interface for interacting with different websites and information. Available for Web.",
+            "links": [{
+                "link": "https://vieworb.com",
+                "platform": "Web"
+            }],
+            "image": "/core/vieworb.svg",
+            "pubimage": "vieworb.png",
+            "modification_dates": [
+                "2025-10-07"
+            ]
         }
+
     }
     return (
         <div className="skills">
